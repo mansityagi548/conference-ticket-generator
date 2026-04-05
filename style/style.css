@@ -1,1 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+html , body{
+  height: 100vh;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 3rem;
+}
+
+.header img {
+  width: 32px;
+  height: 32px;
+}
+
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+}
+
+.congrats_msg h1 {
+  font-size: 2.6rem;
+  color: white;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.congrats_msg {
+  margin-bottom: 1.2rem;
+}
+
+
+#name {
+  background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.confirm_msg p {
+  font-size: 1.2rem;
+  color: white;
+  opacity: 0.9;
+  line-height: 1.3;
+  text-align: center;
+  width: 420px;
+}
+
+#email {
+  color: #f97b54;
+}
+
+.confirm_msg {
+  margin-bottom: 2.7rem;
+}
+
+
+.ticket {
+  position: relative;
+  width: 380px;
+  height: 200px;
+}
+
+.ticket-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ticket-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 2rem;
+  z-index: 1;
+}
+
+
+.ticket-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ticket-top {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ticket-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.ticket-header img {
+  width: 32px;
+  height: 32px;
+}
+
+.ticket-header h2 {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.ticket-date {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+  margin: 0;
+  padding-left: 2.6rem;
+}
+
+
+.ticket-user {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.ticket-user .name {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.ticket-user .github {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  margin: 0;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+#git {
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0.5;
+}
+
+.ticket-right {
+  width: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ticket-number {
+  writing-mode: vertical-rl;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  margin: 1;
+}
+
+
+@media (max-width: 600px) {
+  .header {
+    margin-bottom: 2rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .congrats_msg h1 {
+    font-size: 2rem;
+  }
+
+  .congrats_msg {
+    margin-bottom: 1.7rem;
+  }
+
+  .confirm_msg p {
+    font-size: 1.8rem;
+    width: 100%;              
+    opacity: 0.85;
+  }
+
+  .confirm_msg {
+    margin-bottom: 2.3rem;
+  }
+
+  .ticket {
+    width: calc(100vw - 2.4rem);  
+    max-width: 380px;
+    height: auto;
+    aspect-ratio: 380 / 200;      
+  }
+
+  .ticket-content {
+    padding: 1.5rem;
+  }
+
+  .ticket-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .ticket-header img {
+    width: 27px;
+    height: 27px;
+  }
+
+  .ticket-date {
+    font-size: 1.3rem;
+    padding-left: 0;
+  }
+
+  .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+  }
+
+  .ticket-user .name {
+    font-size: 1.5rem;
+  }
+
+  .ticket-user .github {
+    font-size: 1.4rem;
+  }
+
+  #git {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .ticket-number {
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+  }
+}
+
+
 
