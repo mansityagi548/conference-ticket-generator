@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style/style2.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <img class="pattern-squiggly-top" src="patterns/pattern-squiggly-line-top.svg" alt="" />
+    <img class="pattern-lines" src="patterns/pattern-lines.svg" alt="" />
+    <img class="pattern-circle-tl" src="patterns/pattern-circle.svg" alt="" />
+    <img class="pattern-squiggly-bottom" src="patterns/pattern-squiggly-line-bottom-desktop.svg" alt="" />
+
+    <div class="page">
+        <header class="navbar">
+            <img src="logos/logo-mark.svg" alt="Coding Conf logo" />
+            <span>Coding Conf</span>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+                <p>Secure your spot at next year's biggest coding conference.</p>
+            </section>
+            <section class="form-wrapper">
+                <form>
+                    <div class="field">
+                        <label for="avatarInput">Upload Avatar</label>
+                        <div class="upload-box" id="uploadArea">
+                            <input type="file" id="avatarInput" accept="image/jpeg, image/png" style="display:none">
+
+                            <div class="upload-icon-wrap" id="uploadIconWrap">
+                                <img src="logos/icon-upload.svg" alt="" />
+                            </div>
+                            <img id="previewImg">
+                            <p id="uploadText">Drag and drop or click to upload</p>
+                        </div>
+                        <span class="upload-hint">Upload your photo (JPG or PNG, max size: 500KB).</span>
+                    </div>
+
+                    <div class="field">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" autocomplete="name"/>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com"
+                            autocomplete="email" />
+                    </div>
+
+                    <div class="field">
+                        <label for="github">GitHub Username</label>
+                        <input type="text" id="github" name="github" placeholder="@yourusername" />
+                    </div>
+
+                    <button type="submit" class="btn">Generate My Ticket</button>
+
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="scripts/script.js"></script>
+</body>
+</html>
