@@ -9,11 +9,11 @@ Although this was my first JavaScript project, it helped me build a strong found
 
 
 🔗 **Live Website:**  
-[!Live Demo]()
+[!Live Demo](# https://mansityagi548.github.io/conference-ticket-generator/)
 
 ## 📸 Preview
 
-![Project Preview]()
+![Project Preview](./preview/ticket-generator.png)
 
 
 ## ✨ What This Project Does
@@ -48,7 +48,7 @@ Although this was my first JavaScript project, it helped me build a strong found
   
 - ⚙️ Beginner-friendly code structure
 
----
+
 
 ## 🛠️ Tech Stack
 
